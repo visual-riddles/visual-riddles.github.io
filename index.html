@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Visual Riddles">
+  <meta property="og:title" content="Visual Riddles Benchmark"/>
+  <meta property="og:description" content="Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models"/>
+  <meta property="og:url" content="https://whoops-benchmark.github.io/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Visual Riddles Benchmark">
+  <meta name="twitter:description" content="Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/nitzangu_Albert_Einstein_holds_an_iphone_realistic_style_ba15ea7b-b829-478b-adef-b474ccf01a2a.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Vision-and-Language Benchmark, Synthetic and Compositional Images">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Visual Riddles Benchmark </title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">-->
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Visual Riddles: a Commonsense and <br> World Knowledge Challenge
+                for <br> Large Vision and Language Models</h1>
+<!--            <div class="is-size-5 publication-authors">-->
+<!--              &lt;!&ndash; Paper authors &ndash;&gt;-->
+<!--              <span class="author-block">-->
+<!--                <a href="https://www.linkedin.com/in/nitzan-guetta-34a0021b5/" target="_blank">Nitzan Guetta Bitton</a><sup>*</sup>,&nbsp;</span>-->
+<!--                <span class="author-block">-->
+<!--                  <a href="https://yonatanbitton.github.io/" target="_blank">Yonatan Bitton</a><sup>*</sup>,&nbsp;</span>-->
+<!--                  <span class="author-block">-->
+<!--                    <a href="https://jmhessel.com/" target="_blank">Jack Hessel</a>,&nbsp;</span><br>-->
+<!--                    <span class="author-block">-->
+<!--                      <a href="https://people.csail.mit.edu/ludwigs/" target="_blank">Ludwig Schmidt</a>,&nbsp;</span>-->
+<!--                      <span class="author-block">-->
+<!--                        <a href="https://cyber.bgu.ac.il/yuval/" target="_blank">Yuval Elovici</a>,&nbsp;</span>-->
+<!--                        <span class="author-block">-->
+<!--                          <a href="https://gabrielstanovsky.github.io/" target="_blank">Gabriel Stanovsky</a>,&nbsp;</span>-->
+<!--                          <span class="author-block">-->
+<!--                            <a href="https://schwartz-lab-huji.github.io/" target="_blank">Roy Schwartz</a>,&nbsp;</span>-->
+<!--                  </div>-->
+
+<!--                  <div class="is-size-5 publication-authors">-->
+<!--                    <span class="author-block">Ben Gurion University of the Negev,&nbsp;&nbsp;</span>-->
+<!--                    <span class="author-block">The Hebrew University of Jerusalem,</span><br>-->
+<!--                    <span class="author-block">Allen Institute for Artificial Intelligence,&nbsp;&nbsp;</span>-->
+<!--                    <span class="author-block">University of Washington</span>-->
+<!--                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span><br>-->
+<!--                      <br>-->
+<!--                    <span class="author-block">-->
+<!--                            <b>-->
+<!--                                <img src="static/images/iccv 2023 logo.png"  style="width: 15%; height: 15%" class="image-spacing"/>-->
+<!--                            </b>-->
+
+<!--                            <small>-->
+<!--                                <img src="static/images/NeurIPS 2023 logo.png"  style="width: 20%; height: 20%"/>-->
+<!--                            </small>-->
+
+<!--                    </span>-->
+<!--                  <br>-->
+<!--                  </div>-->
+              <br>
+<!--                  &lt;!&ndash; Github link &ndash;&gt;-->
+<!--                  <span class="link-block">-->
+<!--                    <a href="https://github.com/YOUR REPO HERE" target="_blank"-->
+<!--                    class="external-link button is-normal is-rounded is-dark">-->
+<!--                    <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                    </span>-->
+<!--                    <span>Code</span>-->
+<!--                  </a>-->
+<!--                </span>-->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="<place_holder>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+<!--            <span class="link-block">-->
+<!--                  <a href="https://medium.com/@nitzanguetta/introducing-whoops-a-benchmark-of-commonsense-defying-synthetically-generated-images-6748268458e8" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="ai ai-arxiv"></i>-->
+<!--                  </span>-->
+<!--                  <span>Medium</span>-->
+<!--                </a>-->
+<!--              </span>-->
+
+                <!-- HuggingFace Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/visual-riddles/visual-riddles" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">&#x1F917;</p>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+
+<!--              <span class="link-block">-->
+<!--                  <a href="https://huggingface.co/spaces/nlphuji/whoops-explorer-full" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <p style="font-size:20px">&#x1F917;</p>-->
+<!--                  </span>-->
+<!--                  <span>Explorer</span>-->
+<!--                </a>-->
+<!--              </span>-->
+
+              <span class="link-block">
+                  <a href="https://colab.research.google.com/drive/1E3Kpc9xFkD97CEobN79C9jdLJNIcbz0s?usp=sharing" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
+                  <span>Evaluation Notebook</span>
+                </a>
+              </span>
+
+<!--              <span class="link-block">-->
+<!--                  <a href="https://colab.research.google.com/drive/1yphyMKFFrK7TrNVhbVIlzkYfs77mZBxi?usp=sharing" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fa fa-code"></i>-->
+<!--                  </span>-->
+<!--                  <span>Explanation of Violation Evaluation</span>-->
+<!--                </a>-->
+<!--              </span>-->
+
+<!--              <span class="link-block">-->
+<!--                <a href="static/pdfs/WHOOPS-iccv-poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fa fa-file"></i>-->
+<!--                  </span>-->
+<!--                  <span>ICCV poster</span>-->
+<!--                </a>-->
+<!--              </span>-->
+
+<!--              <span class="link-block">-->
+<!--                <a href="static/pdfs/whoops!_neurips_poster.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fa fa-file"></i>-->
+<!--                  </span>-->
+<!--                  <span>NeurIPS poster</span>-->
+<!--                </a>-->
+<!--              </span>-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="publication-flipped">
+<!--        <h2 class="title is-3">What makes these images weird?</h2>-->
+        <div class="content has-text-justified">
+<!--            CLICK TO GET AN ANSWER!-->
+<!--        <div class="flip-box-container">-->
+<!--            <div class="flip-box">-->
+<!--        <h2 class="title is-3">What makes these images weird?</h2>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="flip-box-container">
+          <div class="flip-box">
+              <center><h4><br>Why is he doing this?<br><br></h4></center>
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="static/images/mosquito.png" alt="Paris" style="width:300px;height:300px">
+              </div>
+              <div class="flip-box-back">
+                <h2><br><br>Look at the nightstand</h2>
+                <p class="has-text-weight-bold">The image depicts a man scratching his arm, in a bedroom and a mosquito on a nightstand near the bed. Therefore, the man probably scratching his arm due to mosquito bite.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-box">
+              <center><h4><br>What is this local doing?<br><br></h4></center>
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="static/images/italian.jpg" alt="Paris" style="width:300px;height:300px">
+              </div>
+              <div class="flip-box-back">
+                <h2><br>Look at his cheek</h2>
+                <p class="has-text-weight-bold">This local is most likely Italian, based on the colosseum in the background. He appears to be eating and pushing his finger to his cheek. In Italy, while eating, this gesture usually means “buono” - that you find the food tasty. Therefore, he is most likely saying that the food is delicious.</p>
+              </div>
+            </div>
+          </div>
+
+         <div class="flip-box">
+             <center><h4>Sara is a resort owner in Krabi, Thailand. could this be her resort?</h4></center>
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="static/images/krabi.png" alt="Paris" style="width:300px;height:300px">
+              </div>
+              <div class="flip-box-back">
+                <h2><br>Look on the mountains</h2>
+                <p class="has-text-weight-bold">An outside image of a thai-style house, with big yard. in the yard there is grass and big pool. on the far background there are Alpine mountains with snow on the tops. there is visible snow on the mountains tops.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+<!--        </p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Abstract
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left has-background-info-light pr-4 pl-4 pt-3 pb-3">
+         <p>
+             Imagine observing someone scratching their arm; to understand why, additional context would be necessary. However, spotting a mosquito nearby would immediately offer a likely explanation for the person's discomfort, thereby alleviating the need for further information. This example illustrates how subtle visual cues can challenge our cognitive skills and demonstrates the complexity of interpreting visual scenarios.
+             To study these skills, we present Visual Riddles, a benchmark aimed to test vision and language models on visual riddles requiring commonsense and world knowledge.
+             The benchmark comprises 400 visual riddles, each featuring a unique image created by a variety of text-to-image models, question, ground-truth answer, textual hint, and attribution.
+             Human evaluation reveals that existing models lag significantly behind human performance, which is at 82% accuracy, with Gemini-Pro-1.5 leading with 40% accuracy. Our benchmark comes with automatic evaluation tasks to make assessment scalable. These findings underscore the potential of Visual Riddles as a valuable resource for enhancing vision and language models' capabilities in interpreting complex visual scenarios.
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Will be completed
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+         Will be completed
+           <br><br>
+<!--           <img src="static/images/clusters.png"  alt="MY ALT TEXT"/>-->
+         </p>
+         </h3>
+      </div>
+
+<!--      <div class="item">-->
+<!--         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
+<!--           Using Weird Images to Create V&L Tasks-->
+<!--           </h2>-->
+<!--         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--         <p>-->
+<!--         The WHOOPS! benchmark includes four tasks:-->
+<!--            <ol class="pr-2 pl-6">-->
+<!--              <li>A novel task of explanation-of-violation: generating a detailed explanation for what makes the image weird</li>-->
+<!--              <li>Generating a literal caption</li>-->
+<!--              <li>Distinguishing between detailed and underspecified captions</li>-->
+<!--             <li>Answering questions that test compositional understanding</li>-->
+<!--            </ol>-->
+<!--             <br><br>-->
+<!--           <img src="static/images/benchmarking.png"/>-->
+<!--         </p>-->
+<!--         </h3>-->
+<!--      </div>-->
+
+<!--      <div class="item">-->
+<!--         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
+<!--           Test Results for Explanation-of-violation-->
+<!--           </h2>-->
+<!--         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--           <p>Models significantly lag behind human performance. For example, on identification, the best end-to-end fine-tuned BLIP2 FlanT5-XXL model achieves at best 73%. For explanation, even the oracle model (which is given access to a ground-truth, human-authored description of the image) only achieves a performance of 68%, falling substantially short of human performance (95%). We also added auto-eval results that are correlated with the human-eval. These results indicate that our dataset provides a challenging benchmark for the development of next-generation vision-and-language models.</p>-->
+<!--         <p style="text-align:center;">-->
+<!--           <br><br>-->
+<!--           <img src="static/images/Tb1.png"  style="width: 80%; height: 80%"/>-->
+<!--         </p>-->
+<!--         </h3>-->
+<!--      </div>-->
+
+<!--      <div class="item">-->
+<!--        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
+<!--           Test Results for Image Captioning, Cross-Modal Matching and Visual Question Answering-->
+<!--           </h2>-->
+<!--         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--           <p>The zero-shot results highlight the strengths and weaknesses of each model. Zero-shot BLIP2 demonstrates a substantial improvement over the other models. But even the supervised models have significant room for improvement, especially in VQA (maximum BEM score is 57%) and image captioning-->
+<!--           </p>-->
+<!--         <p style="text-align:center;">-->
+<!--           <br><br>-->
+<!--           <img src="static/images/Tb2.png"  style="width: 80%; height: 80%"/>-->
+<!--         </p>-->
+<!--         </h3>-->
+<!--      </div>-->
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+<!--<script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.16.2/gradio.js"></script>-->
+
+<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--          <div class="publication-video">-->
+<!--            <gradio-app src="https://nlphuji-whoops-explorer.hf.space"></gradio-app>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-- End youtube video -->
+
+<!-- Youtube video -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h3 class="subtitle is-size-4-tablet has-background-info-light has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--      We collect <i>normal</i> (synthetic, not weird) and <i>natural</i> (non-synthetic, not weird) images to investigate the main challenge in WHOOPS!. BLIP2 model performs well on <i>non-weird</i> cases but struggles on weird ones, indicating that weirdness is the primary challenge, not synthesis.-->
+<!--      </h3>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--          <div class="publication-video">-->
+<!--            <iframe src="https://nlphuji-whoops-explorer-analysis.hf.space" frameborder="0" width="850" height="450"></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<!-- Paper poster -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Paper</h2>-->
+<!--      <iframe  src="static/pdfs/WHOOPS_paper.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--End paper poster -->
+
+<!-- Youtube video -->
+<!--<section class="hero is-small">-->
+<!--    <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--          <div class="publication-video">-->
+<!--            <iframe frameborder="0" width="850" height="450" src="https://www.youtube.com/embed/rMhc50PvDn4?autoplay=1&mute=1&loop=1"></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--        <h2 class="title">Poster Presentations</h2>-->
+<!--        <div class="columns is-centered has-text-centered">-->
+<!--            <img src="static/images/NeurIPS presentation n.jpeg"  style="width: 30%; height: 30%" class="image-spacing"/>-->
+<!--            <img src="static/images/NeurIPS presentation y.jpeg"  style="width: 30%; height: 30%"/>-->
+<!--            </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!-- Image carousel -->
+<!--<section class="hero is-small  is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--        <h2 class="title">Poster Presentations</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--       <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/NeurIPS presentation n.jpeg" alt="MY ALT TEXT" style="width: 50%; height: 50%" class="center_caro_img"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          NeurIPs Creative AI.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/NeurIPS presentation y.jpeg" alt="MY ALT TEXT" style="width: 50%; height: 50%" class="center_caro_img"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          NeurIPs Creative AI.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--&lt;!&ndash;      <div class="item">&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; Your image here &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <img src="static/images/NeurIPS presentation n.jpeg" alt="MY ALT TEXT" style="width: 50%; height: 50%" class="center_caro_img"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <h2 class="subtitle has-text-centered">&ndash;&gt;-->
+<!--&lt;!&ndash;         Third image description.&ndash;&gt;-->
+<!--&lt;!&ndash;       </h2>&ndash;&gt;-->
+<!--&lt;!&ndash;     </div>&ndash;&gt;-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- End image carousel -->
+
+
+
+<!--<script-->
+<!--	type="module"-->
+<!--	src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"></script>-->
+<!--<section class="hero is-small">-->
+<!--    <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--          <div class="publication-video">-->
+<!--            <gradio-app src="https://nlphuji-whoops-leaderboard.hf.space"></gradio-app>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--BibTex citation -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--  <section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--      <h2 class="title">BibTeX</h2>-->
+<!--      <pre><code>@misc{https://doi.org/10.48550/arxiv.2303.07274,-->
+<!--        doi = {10.48550/ARXIV.2303.07274},-->
+
+<!--        url = {https://arxiv.org/abs/2303.07274},-->
+
+<!--        author = {Bitton-Guetta, Nitzan and Bitton, Yonatan and Hessel, Jack and Schmidt, Ludwig and Elovici, Yuval and Stanovsky, Gabriel and Schwartz, Roy},-->
+
+<!--        keywords = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},-->
+
+<!--        title = {Breaking Common Sense: WHOOPS! A Vision-and-Language Benchmark of Synthetic and Compositional Images},-->
+
+<!--        publisher = {arXiv},-->
+
+<!--        year = {2023},-->
+
+<!--        copyright = {arXiv.org perpetual, non-exclusive license}-->
+<!--      }</code></pre>-->
+<!--    </div>-->
+<!--</section>-->
+<!--    </div>-->
+<!--</section>-->
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p style="color:gray;font-size:9.9px;">
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <a href="https://www.flaticon.com/free-icons/magic" title="magic icons">Magic icons created by Freepik - Flaticon</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+  </body>
+  </html>
