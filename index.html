@@ -7,7 +7,7 @@
   <meta name="description" content="Visual Riddles">
   <meta property="og:title" content="Visual Riddles Benchmark"/>
   <meta property="og:description" content="Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models"/>
-  <meta property="og:url" content="https://whoops-benchmark.github.io/"/>
+  <meta property="og:url" content="https://visual-riddles.github.io/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
@@ -277,13 +277,79 @@
 
       <div class="item">
          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
-           Will be completed
+           Data Collection
            </h2>
          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
          <p>
-         Will be completed
+         The Visual Riddles Challenge tests vision-and-language models using visual riddles that incorporate common-sense reasoning with culturally rich and ambiguous scenarios.
+           Each riddle features a synthetic image created by experienced designers using advanced text-to-image models like DALLE-3, Gemini-1.5 and Stable-Diffusion.
+           These images, designed to include subtle visual clues and cultural nuances, challenge the models to integrate commonsense and world knowledge for solving.
+           Designers provide hints to guide the interpretation of visual clues and attributions for riddles requiring specific knowledge. After rigorous peer review to ensure clarity and solvability,
+           each riddle is finalized with a detailed answer explaining the solution logically based on the visual clues. The dataset aims to advance the capabilities of AI models in interpreting complex visual information.
            <br><br>
-<!--           <img src="static/images/clusters.png"  alt="MY ALT TEXT"/>-->
+           <img src="static/images/VR-Challenge_fig1.jpg"  alt="MY ALT TEXT"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Visual Riddles Benchmark
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+         This study introduces three critical tasks within the Visual Riddles benchmark to evaluate vision-and-language models:
+           solving open-ended visual riddles, selecting the correct answer from multiple options, and assessing open-ended responses both with and without reference answers.
+           We also incorporate auxiliary information, such as textual hints and attributions, to enhance model accuracy.
+           For example, hints like 'Look at the colors of the fur' guide models to accurately infer a cat’s gender, leveraging knowledge that calico cats are predominantly female.
+           These tasks are designed to enhance model capabilities in integrating visual data with commonsense reasoning and detailed justifications, supporting scalable and automated evaluations.
+           <br><br>
+           <img src="static/images/VR_Tasks.jpg"  alt="MY ALT TEXT"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Experiments - Open-ended VQA
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+         Our experiments evaluated several leading vision-and-language models, including LLaVA, Gemini-Pro,
+           InstructBLIP, and GPT-4, on various tasks within our benchmark.
+          Models like Gemini-Pro-1.5 showed a performance of 40%, with humans achieving 82%. Even with auxiliary data such as human-generated captions, model performance improved only marginally.
+           This task tests models' ability to generate correct answers from visual cues alone.
+         <br><br>
+           <img src="static/images/table1.jpg"  alt="MY ALT TEXT"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Experiments - Multiple-choice VQA
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+         This task shifts from generative to classification-based evaluation.
+           GPT-4 and Gemini-Pro-Vision showed the highest accuracies, with slight improvements over open-ended tasks.
+           Models perform better with hints, demonstrating the importance of auxiliary information in enhancing accuracy.
+         <br><br>
+           <img src="static/images/table1.jpg"  alt="MY ALT TEXT"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Experiments - Automatic Evaluation
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+         Gemini-Pro-1.5, identified as the best auto-rater, scored higher in evaluations that used reference-based scenarios.
+           It demonstrated that models generally perform better with hints but struggle with attributions, highlighting ongoing challenges in model reasoning with auxiliary data.
+         <br><br>
+           <img src="static/images/table34.jpg"  alt="MY ALT TEXT"/>
          </p>
          </h3>
       </div>
